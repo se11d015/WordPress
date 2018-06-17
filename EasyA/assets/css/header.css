@@ -1,0 +1,296 @@
+.header .dropdown-menu.show {
+  top: 0 !important;
+  right: 0 !important;
+  left: auto !important; }
+
+.header .dropdown-menu .dropdown-item {
+  cursor: pointer; }
+
+.header .header-profile {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 10px 0;
+  cursor: pointer; }
+  .header .header-profile .profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 20px;
+    text-align: center; }
+    .header .header-profile .profile-photo img {
+      width: 100%; }
+  .header .header-profile .profile-name {
+    font-size: 18px;
+    font-weight: 700; }
+  @media all and (max-width: 1180px) {
+    .header .header-profile {
+      color: #fff; } }
+
+.header .header-public {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.05);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: all ease-in 0.2s;
+  -o-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s; }
+  .header .header-public .col-logo {
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    position: relative;
+    min-width: 110px; }
+    .header .header-public .col-logo .toggle-menu {
+      opacity: 0;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+      outline: none !important;
+      -webkit-box-shadow: none !important;
+              box-shadow: none !important;
+      padding: 0;
+      margin: 0; }
+      .header .header-public .col-logo .toggle-menu .fa {
+        display: block; }
+      @media all and (max-width: 1180px) {
+        .header .header-public .col-logo .toggle-menu {
+          opacity: 1;
+          position: absolute;
+          top: 25px;
+          right: 0; } }
+  .header .header-public .col-menu {
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto; }
+  .header .header-public .col-buttons {
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto; }
+  @media all and (max-width: 1180px) {
+    .header .header-public {
+      max-height: 80px;
+      height: auto;
+      overflow: hidden;
+      background: #26292c;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      border-color: #212427;
+      -webkit-transition: all cubic-bezier(0, 1, 0.5, 1) 0.5s;
+      -o-transition: all cubic-bezier(0, 1, 0.5, 1) 0.5s;
+      transition: all cubic-bezier(0, 1, 0.5, 1) 0.5s; }
+      .header .header-public.slide-down {
+        max-height: calc(100vh - 100px);
+        overflow-y: scroll; }
+      .header .header-public .col-logo {
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%; }
+      .header .header-public .col-menu {
+        -ms-flex: 2 1 100%;
+            flex: 2 1 100%;
+        padding: 0; }
+      .header .header-public .col-buttons {
+        -ms-flex: 3 1 100%;
+            flex: 3 1 100%; } }
+  .header .header-public .logo {
+    height: 80px;
+    padding: 28px 0;
+    text-align: left;
+    position: relative; }
+    .header .header-public .logo img {
+      height: 25px; }
+    .header .header-public .logo:before {
+      content: '';
+      background: url("/images/logo.svg") no-repeat;
+      position: absolute;
+      top: 28px;
+      left: 0;
+      height: 25px;
+      width: 103px;
+      background-size: contain; }
+    @media all and (max-width: 1180px) {
+      .header .header-public .logo:before {
+        content: '';
+        background: url("/images/logo-inverse.svg") no-repeat;
+        position: absolute;
+        top: 28px;
+        left: 0;
+        height: 25px;
+        width: 103px;
+        background-size: contain; } }
+  .header .header-public .header-menu {
+    text-align: center;
+    list-style: none;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 500;
+    height: 80px;
+    padding-top: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+    .header .header-public .header-menu a,
+    .header .header-public .header-menu .sub-menu {
+      margin: 0 20px;
+      -webkit-transition: all ease-in 0.1s;
+      -o-transition: all ease-in 0.1s;
+      transition: all ease-in 0.1s;
+      border-bottom: solid 2px transparent;
+      color: #26292c;
+      display: block;
+      height: 58px;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      position: relative; }
+      .header .header-public .header-menu a.active, .header .header-public .header-menu a:hover,
+      .header .header-public .header-menu .sub-menu.active,
+      .header .header-public .header-menu .sub-menu:hover {
+        border-bottom: solid 2px #26292c; }
+        .header .header-public .header-menu a.active .dd-menu, .header .header-public .header-menu a:hover .dd-menu,
+        .header .header-public .header-menu .sub-menu.active .dd-menu,
+        .header .header-public .header-menu .sub-menu:hover .dd-menu {
+          display: block; }
+      .header .header-public .header-menu a:first-child,
+      .header .header-public .header-menu .sub-menu:first-child {
+        margin-left: 0; }
+      .header .header-public .header-menu a:last-child,
+      .header .header-public .header-menu .sub-menu:last-child {
+        margin-right: 0; }
+    @media all and (max-width: 1180px) {
+      .header .header-public .header-menu {
+        display: block;
+        height: auto;
+        padding: 0; }
+        .header .header-public .header-menu a,
+        .header .header-public .header-menu .sub-menu {
+          width: 100%;
+          text-align: left;
+          margin: 0 0 10px;
+          height: auto;
+          line-height: 30px;
+          padding: 0 0 10px;
+          border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+          color: #fff; }
+          .header .header-public .header-menu a.active, .header .header-public .header-menu a:hover,
+          .header .header-public .header-menu .sub-menu.active,
+          .header .header-public .header-menu .sub-menu:hover {
+            font-weight: 700;
+            border-bottom: solid 1px white; }
+          .header .header-public .header-menu a .dd-menu,
+          .header .header-public .header-menu .sub-menu .dd-menu {
+            display: block;
+            position: relative;
+            top: 0;
+            width: 100%;
+            background: none;
+            border-top: solid 1px rgba(255, 255, 255, 0.1);
+            margin-top: 10px; }
+            .header .header-public .header-menu a .dd-menu a,
+            .header .header-public .header-menu .sub-menu .dd-menu a {
+              background: none;
+              padding: 5px 0 !important;
+              text-indent: 20px;
+              font-weight: 400 !important;
+              border-bottom: solid 1px rgba(255, 255, 255, 0.05);
+              color: #fff !important; }
+              .header .header-public .header-menu a .dd-menu a:last-child,
+              .header .header-public .header-menu .sub-menu .dd-menu a:last-child {
+                border: none; }
+              .header .header-public .header-menu a .dd-menu a:hover,
+              .header .header-public .header-menu .sub-menu .dd-menu a:hover {
+                font-weight: 600 !important; }
+        .header .header-public .header-menu .sub-menu:hover {
+          border-bottom: solid 1px rgba(255, 255, 255, 0.1) !important;
+          font-weight: 400 !important; } }
+  .header .header-public .header-buttons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+    .header .header-public .header-buttons .select {
+      max-width: 120px;
+      margin: 20px 10px; }
+      .header .header-public .header-buttons .select .form-select {
+        border-color: #9193a0; }
+    .header .header-public .header-buttons .btn {
+      margin: 20px 10px; }
+      .header .header-public .header-buttons .btn:first-child {
+        margin-left: 0; }
+      .header .header-public .header-buttons .btn:last-child {
+        margin-right: 0; }
+    @media all and (max-width: 1180px) {
+      .header .header-public .header-buttons {
+        display: block;
+        padding: 10px 0; }
+        .header .header-public .header-buttons .select {
+          width: 100%;
+          max-width: 100%;
+          margin: 0 0 10px; }
+        .header .header-public .header-buttons .btn {
+          width: 100%;
+          text-align: left;
+          margin: 0;
+          display: block;
+          margin-bottom: 10px; } }
+  .header .header-public.sticky {
+    background: #26292c;
+    border-color: #212427; }
+    .header .header-public.sticky .header-menu a,
+    .header .header-public.sticky .header-menu .sub-menu {
+      color: #fff; }
+      .header .header-public.sticky .header-menu a.active, .header .header-public.sticky .header-menu a:hover,
+      .header .header-public.sticky .header-menu .sub-menu.active,
+      .header .header-public.sticky .header-menu .sub-menu:hover {
+        border-bottom: solid 2px #fff; }
+    .header .header-public.sticky .logo:before {
+      content: '';
+      background: url("/images/logo-inverse.svg") no-repeat;
+      position: absolute;
+      top: 28px;
+      left: 0;
+      height: 25px;
+      width: 103px;
+      background-size: contain; }
+
+.header .inverse {
+  position: fixed;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.3); }
+  .header .inverse .logo:before {
+    content: '';
+    background: url("/images/logo-inverse.svg") no-repeat;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    height: 25px;
+    width: 103px;
+    background-size: contain; }
+  .header .inverse .header-buttons .select .form-select {
+    border-color: #fff; }
+  .header .inverse .header-menu a,
+  .header .inverse .header-menu .sub-menu {
+    color: #fff; }
+    .header .inverse .header-menu a.active, .header .inverse .header-menu a:hover,
+    .header .inverse .header-menu .sub-menu.active,
+    .header .inverse .header-menu .sub-menu:hover {
+      border-bottom: solid 2px #fff; }
