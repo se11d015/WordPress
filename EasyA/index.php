@@ -15,7 +15,7 @@
 					<p class="special-text">Private, 1–on–1 lessons with the tutor of your choice.
 						<br> You decide when to meet, how much to pay, and who you want to work with.
 					</p>
-					<a class="scroll-down">
+					<a href="#steps" class="scroll-down">
 						<i class="fa fa-angle-down">
 						</i> See how personalized learning will work for you
 					</a>
@@ -143,7 +143,7 @@
 		</div>
 	</div>
 </div>
-<div class="landing-steps" id="steps">
+<div class="landing-steps" id="steps" tabindex="-1" style="outline: none;">
 	<div class="custom-container">
 		<div class="row">
 			<div class="col-xs-12">
